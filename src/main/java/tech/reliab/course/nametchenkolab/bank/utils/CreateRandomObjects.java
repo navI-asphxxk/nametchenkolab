@@ -1,5 +1,6 @@
 package tech.reliab.course.nametchenkolab.bank.utils;
 
+import lombok.Getter;
 import tech.reliab.course.nametchenkolab.bank.entity.WorkStatus;
 import tech.reliab.course.nametchenkolab.bank.service.impl.*;
 
@@ -8,6 +9,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Random;
 
+@Getter
 public class CreateRandomObjects {
     private BankServiceImpl bankService = new BankServiceImpl();
     private BankOfficeServiceImpl officeService = new BankOfficeServiceImpl(bankService);
